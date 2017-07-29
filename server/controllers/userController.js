@@ -4,8 +4,9 @@ const userController = {};
 
 userController.post = (req, res) => {
     const { username, password } = req.body;
-    console.log(req.body);
 
+    //Validation should go here
+    
     const user = new db.User({
         username,
         password
